@@ -54,8 +54,8 @@
                 <div class="text-gray-400 mt-2">Always Available</div>
             </div>
             <div class="text-center">
-                <div class="text-4xl font-bold text-green-400">100+</div>
-                <div class="text-gray-400 mt-2">Stations</div>
+                <div class="text-4xl font-bold text-green-400">1</div>
+                <div class="text-gray-400 mt-2">Station</div>
             </div>
         </div>
     </section>
@@ -69,8 +69,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div class="text-center relative">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-2xl font-bold shadow-lg shadow-green-500/50">1</div>
-                    <h3 class="text-2xl font-bold mb-4">Scan QR Code</h3>
-                    <p class="text-gray-400">Open the app and scan the QR code on the charging station to start</p>
+                    <h3 class="text-2xl font-bold mb-4">Pay with Coins, Bills, E-wallets</h3>
+                    <p class="text-gray-400">Insert money or Pay with E-wallet on the charging station to start</p>
                 </div>
                 <div class="text-center relative">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-2xl font-bold shadow-lg shadow-blue-500/50">2</div>
