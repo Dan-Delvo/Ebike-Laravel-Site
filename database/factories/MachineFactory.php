@@ -17,7 +17,8 @@ class MachineFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'User_ID' => \App\Models\User::factory(),
+            'Machine_Name' => fake()->company() . ' ' . fake()->word(),
         ];
     }
 }

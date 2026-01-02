@@ -29,7 +29,7 @@ class TransactionController extends Controller
      */
     public function store(StoreTransactionRequest $request)
     {
-        //
+        Transaction::storeTransaction($request);
     }
 
     /**

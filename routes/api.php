@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Mail;
 
 Route::post('/send-email', [EmailController::class, 'sendEmail']);
+Route::post('/store-transaction', [TransactionController::class, 'store']);
 
 Route::get('/test-mail-config', function() {
     return response()->json([

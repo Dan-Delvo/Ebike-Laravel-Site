@@ -25,6 +25,7 @@ Route::middleware(['web'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin/', [AdminController::class, 'dashboard']);
+    Route::post('/machine/{id}/toggle-status', [AdminController::class, 'toggleStatus'])->name('machine.toggle');
 });
 
 
