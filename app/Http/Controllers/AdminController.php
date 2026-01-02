@@ -14,7 +14,9 @@ class AdminController extends Controller
         $transaction = Transaction::getTransactions()->paginate(10);
         $machine = Machine::getMachines()->get();
 
-        return view('pages.admin.admin_dashboard', compact('transaction', 'machine'));
+        $stats = Transaction::getStats();
+
+        return view('pages.admin.admin_dashboard', compact('transaction', 'machine', 'stats'));
 
     }
 

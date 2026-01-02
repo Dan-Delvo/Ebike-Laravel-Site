@@ -43,4 +43,13 @@ class Transaction extends Model
             'Time' => now(),
         ]);
     }
+
+    public static function getStats() {
+        return self::whereHas('machine', function($query) {
+                $query->where('User_ID', Auth::id());
+            })
+            ->selectRaw('sum(Amount) as total_profit, count(*) as total_transactions')
+            ->first();
+    }
+
 }
