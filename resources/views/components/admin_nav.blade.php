@@ -11,6 +11,10 @@
             <div class="flex gap-6">
                 <a href="/" class="{{ request()->is('/') ? 'active-text' : 'hover:text-green-400' }} transition-colors">Dashboard</a>
                 <a href="/login" class="{{ request()->is('login') ? 'active-text' : 'hover:text-green-400' }} transition-colors">Transactions</a>
+                <form action="{{ route('logout') }}" method="POST" class="inline">
+                    @csrf
+                    <button type="submit" class="btn btn-error">Logout</button>
+                </form>
             </div>
         </div>
     </nav>
