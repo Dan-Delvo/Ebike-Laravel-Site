@@ -31,7 +31,7 @@
 
             <div class='col-span-2 grid grid-cols-3'>
                 <h2 class="text-2xl col-span-3 md:text-2xl font-bold text-center mb-4">Statistics</h2>
-                <div class="text-4xl col-span-3 font-bold text-green-400">TOTAL PROFIT: {{ number_format($stats->total_profit, 2) }}</div>
+                <div class="text-4xl col-span-3 font-bold text-green-400">TOTAL GROSS INCOME: {{ number_format($stats->total_profit, 2) }}</div>
                 <div class="text-4xl col-span-3 font-bold text-green-400">TOTAL TRANSACTIONS: {{ $stats->total_transactions }} </div>
             </div>
 

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Mail\SendCustomMail;
 use App\Mail\SendStart;
+use App\Mail\SendGraceWarning;
+use App\Mail\SendTerminated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -59,6 +61,10 @@ class EmailController extends Controller
 
             if($request->status === 'start'){
                 Mail::to($request->email)->send(new SendStart());
+            } else if($request->status === 'grace_started'){
+                Mail::to($request->email)->send(new SendGraceWarning());
+            } else if($request->status === 'terminated'){
+                Mail::to($request->email)->send(new SendTerminated());
             } else {
                 Mail::to($request->email)->send(new SendCustomMail());
             }
